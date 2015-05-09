@@ -90,7 +90,14 @@
                     <a href="https://github.com/bugdone/headshotbox/releases/download/0.4/headshotbox-0.4-win.zip" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-download-alt"></i> <span class="network-name">Windows</span></a>
                   </li>
                 </ul>
-                <a href="https://java.com/en/download/" class="java-download"><em>* Java required</em></a>
+                <ul style="list-style: none;">
+                  <li>
+                    <a href="https://java.com/en/download/" class="java-download"><em>* Java required</em></a>
+                  </li>
+                  <li>
+                    <a href="http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe" class="java-download"><em>* Windows version requires Visual C++ Redistributable Packages for VS 2013</em></a>
+                  </li>
+                </ul>
               </div>
           </div>
         </div>
@@ -207,6 +214,12 @@
         <p/>
 
         <p class="lead">
+          <b>Log mentions Exception in thread "main" java.lang.AssertionError: Assert failed: (zero? (:exit proc))</b>
+          <br/>
+          It's either a bug or, if you're on Windows, you may have forgot to install <a href="http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe" class="java-download">Visual C++ Redistributable Packages for VS 2013</a>.
+        <p/>
+
+        <p class="lead">
           <b>Why is a player missing from the Player List when I have just 1 demo with that player?</b>
           <br/>
           Player List only displays players with more than 1 demo.
@@ -247,6 +260,7 @@
             </li>
           </ul>
         <p/>
+
       </div>
     </div>
 

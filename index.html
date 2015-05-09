@@ -87,17 +87,25 @@
               <div class="download-buttons">
                 <ul class="list-inline">
                   <li>
-                    <a href="https://github.com/bugdone/headshotbox/releases/download/0.4/headshotbox-0.4-win.zip" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-download-alt"></i> <span class="network-name">Windows</span></a>
+                    <a href="https://github.com/bugdone/headshotbox/releases/download/0.5/headshotbox-0.5.0-win.zip" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-download-alt"></i> <span class="network-name">Windows</span></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/bugdone/headshotbox/releases/download/0.5/headshotbox-0.5.0-linux.zip" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-download-alt"></i> <span class="network-name">Linux</span></a>
                   </li>
                 </ul>
+                <em>
                 <ul style="list-style: none;">
                   <li>
-                    <a href="https://java.com/en/download/" class="java-download"><em>* Java required</em></a>
+                    <a href="https://java.com/en/download/" class="java-download">* Java required</a>
                   </li>
                   <li>
-                    <a href="http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe" class="java-download"><em>* Windows version requires Visual C++ Redistributable Packages for VS 2013</em></a>
+                    <a href="http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe" class="java-download"><em>* Windows version requires Visual C++ Redistributable Packages for VS 2013</a>
+                  </li>
+                  <li>
+                    * Linux version requires glibc &ge; 2.15
                   </li>
                 </ul>
+                </em>
               </div>
           </div>
         </div>
@@ -180,7 +188,7 @@
       <div class="container">
         <h2 class="section-heading">Installing</h2>
         <p class="lead">
-        Extract the zip, run <em>headshotbox.bat</em>. Then go to <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a>.
+        Extract the zip, run <em>headshotbox.bat</em>/<em>headshotbox.sh</em>. Then go to <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a>.
         <p/>
         <p class="lead">
         You should see an empty Player List. Go to Settings and edit the Demo directory. Click Update.
@@ -210,7 +218,7 @@
           <b>Headshot Box won't start and the log mentions java.net.BindException: Address already in use</b>
           <br/>
           If you're absolutely positively sure that you don't already have an instance of Headshot Box running then probably another program is listening on port 4000.
-          In this case, edit the <em>headshotbox.bat</em> file and change 4000 to whatever port you like.
+          In this case, edit the <em>headshotbox.bat</em>/<em>headshotbox.sh</em> file and change 4000 to whatever port you like.
         <p/>
 
         <p class="lead">
@@ -236,7 +244,7 @@
         <p class="lead">
           <b>Does it work with ESEA/FACEIT/CEVO demos?</b>
           <br/>
-          Doesn't work with ESEA demos, I didn't test with the others.
+          No yet.
         <p/>
 
         <p class="lead">
@@ -246,17 +254,14 @@
         <p/>
 
         <p class="lead">
-          <b>Watch buttons don't work on Linux?</b>
+          <b>Watch button doesn't work on Linux?</b>
           <br/>
           <ul>
             <li>
-              <div class="lead">demo file names contain the '~' char (gets expanded to the home dir)</div>
+              <div class="lead">The watch button doesn't work for demo file names that contain the '~' char (gets expanded to the home dir) or spaces (sometimes it works, sometimes it doesnt. volvo pls)</div>
             </li>
             <li>
-              <div class="lead">demo file names contain spaces (sometimes it works, sometimes it doesnt. volvo pls)</div>
-            </li>
-            <li>
-              <div class="lead">highlights don't work on linux (<a href="https://github.com/ValveSoftware/Counter-Strike-Global-Offensive/issues/89">volvo pls</a>)</div>
+              <div class="lead">Highlights don't work on linux (<a href="https://github.com/ValveSoftware/Counter-Strike-Global-Offensive/issues/89">volvo pls</a>)</div>
             </li>
           </ul>
         <p/>

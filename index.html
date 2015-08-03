@@ -51,14 +51,14 @@
             <li>
               <a href="#features">Features</a>
             </li>
-            <li>
-              <a href="#installing">Installing</a>
-            </li>
-            <li>
-              <a href="#faq">FAQ</a>
-            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="https://github.com/bugdone/headshotbox/wiki/Setup">Installing</a>
+            </li>
+            <li>
+              <a href="https://github.com/bugdone/headshotbox/wiki/FAQ">FAQ</a>
+            </li>
             <li>
               <a href="https://github.com/bugdone/headshotbox/releases">Changelog</a>
             </li>
@@ -183,105 +183,6 @@
             <img class="img-responsive" src="img/view.png" alt="">
           </div>
         </div>
-      </div>
-    </div>
-
-    <a name="installing"></a>
-    <div class="content-section-a">
-      <div class="container">
-        <h2 class="section-heading">Installing</h2>
-        <p class="lead">
-        Extract the zip, run <em>headshotbox.bat</em>/<em>headshotbox.sh</em> (don't close this window, otherwise the following link will stop working).
-        Then go to <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a>.
-        <p/>
-        <p class="lead">
-        You should see an empty Player List. Go to Settings and edit the Demo directory. Click Update.
-        <p/>
-        <p class="lead">
-          Headshot Box should start parsing the demos in the configured directory (parsing a demo takes a couple of seconds).
-          As more demos get parsed, you should see some players popping up in the Player List (only players with more than 1 demo are displayed here).
-        <p/>
-        <p class="lead">
-          If something goes wrong you can inspect the log file (usually c:/Users/&lt;user&gt;/.config/headshotbox/headshotbox.log)
-        <p/>
-      </div>
-    </div>
-
-    <a name="faq"></a>
-    <div class="content-section-b">
-      <div class="container">
-        <h2 class="section-heading">FAQ</h2>
-        <p class="lead">
-          <b>It doesn't work!</b>
-          <br/>
-          If you find a bug, take a look at the open issues on <a href="https://github.com/bugdone/headshotbox/issues">github</a>.
-          If it's not already reported, open a new one and attach the log.
-        <p/>
-
-        <p class="lead">
-          <b>Headshot Box won't start and the log mentions java.net.BindException: Address already in use</b>
-          <br/>
-          If you're absolutely positively sure that you don't already have an instance of Headshot Box running then probably another program is listening on port 4000.
-          In this case, edit the <em>headshotbox.bat</em>/<em>headshotbox.sh</em> file and change 4000 to whatever port you like.
-        <p/>
-
-        <p class="lead">
-          <b>Log mentions Exception in thread "main" java.lang.AssertionError: Assert failed: (zero? (:exit proc))</b>
-          <br/>
-          It's either a bug or, if you're on Windows, you may have forgot to install <a href="http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe" class="java-download">Visual C++ Redistributable Packages for VS 2013</a>.
-        <p/>
-
-        <p class="lead">
-          <b>Why is a player missing from the Player List when I have just 1 demo with that player?</b>
-          <br/>
-          Player List only displays players with more than 1 demo.
-          Headshot Box computes stats for all the players in the demos, so the list would be pretty big if it would list all of them
-          (eg. if you solo queue in MM for 100 matches there should be ~1000 players in the list)
-        <p/>
-
-        <p class="lead">
-          <b>Does it work with POV demos?</b>
-          <br/>
-          No.
-        <p/>
-
-        <p class="lead">
-          <b>Does it work with Valve/ESEA/FACEIT demos?</b>
-          <br/>
-          Yep.
-        <p/>
-
-        <p class="lead">
-          <b>Does it work with CEVO demos?</b>
-          <br/>
-          Nope (I don't use CEVO and CEVO doesn't allow demo downloads unless you pay or play so I didn't bother).
-        <p/>
-
-        <p class="lead">
-          <b>Why does the ESEA match page lists less assists than HeadshotBox?</b>
-          <br/>
-          HeadshotBox counts all assists displayed in death notices. Valve awards assists more easily than ESEA (ie. you need to deal less damage to get it).
-        <p/>
-
-        <p class="lead">
-          <b>Why do the watch buttons work only when CS:GO is closed?</b>
-          <br/>
-          I don't know if it's possible to send playdemo commands (or any other request) to a CS:GO instance.
-        <p/>
-
-        <p class="lead">
-          <b>Watch button doesn't work on Linux?</b>
-          <br/>
-          <ul>
-            <li>
-              <div class="lead">The watch button doesn't work for demo file names that contain the '~' char (gets expanded to the home dir) or spaces (sometimes it works, sometimes it doesnt. volvo pls)</div>
-            </li>
-            <li>
-              <div class="lead">Highlights don't work on linux (<a href="https://github.com/ValveSoftware/Counter-Strike-Global-Offensive/issues/89">volvo pls</a>)</div>
-            </li>
-          </ul>
-        <p/>
-
       </div>
     </div>
 
